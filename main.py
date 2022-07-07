@@ -22,7 +22,7 @@ def iris():
 def asteroids():
     data = pandas.read_csv('data/neo_v2.csv')
 
-    data.drop(columns=['id', 'name', 'orbiting_body'], inplace=True)
+    data.drop(columns=['id', 'name', 'orbiting_body', 'sentry_object'], inplace=True)
     y = data['hazardous']
     X = data.drop(columns=['hazardous'])
 
